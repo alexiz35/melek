@@ -1,13 +1,24 @@
 .container {
-  padding: 0 2rem;
+  padding-top: 135px;
+  background: gray;
+  height: 1000px;
+  color: blue;
 }
 
-.main {
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.main2 {
+  /*margin-top: 91px;*/
+  position: static;
+  height: 1500px;
   min-height: 100vh;
-  padding: 4rem 0;
+  /*padding: 4rem 0;*/
   flex: 1;
   display: flex;
-  flex-direction: column;
+/*  flex-direction: column;*/
   justify-content: center;
   align-items: center;
 }
@@ -126,4 +137,10 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.runString {
+  height: 35px;
+  background: #111111;
+  color: #0070f3;
 }
