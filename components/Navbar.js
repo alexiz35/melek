@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
 import Col from "react-bootstrap/Col";
 import "../styles/Navbar.module.css"
 
@@ -26,8 +27,8 @@ export default function Navbar2() {
             <Container>
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
                 <Nav>
-                    <Nav.Link href="#features">Допомогти</Nav.Link>
-                    <Nav.Link href="#pricing">Новини</Nav.Link>
+                    <Link href="/404"><a className="nav-link">Допомогти</a></Link>
+                    {/*<Link href="#pricing"><Nav>Новини</Nav></Link>*/}
                     <Nav.Link href="#pricing">Пронас</Nav.Link>
                     <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -40,11 +41,13 @@ export default function Navbar2() {
                             Separated link
                         </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#pricing">
+                    <Nav>
+                        <Link href="/payment">
                         <Button variant="primary">
                             Допомогти
                         </Button>
-                    </Nav.Link>
+                        </Link>
+                    </Nav>
 
                 </Nav>
                 {/*  <Nav>

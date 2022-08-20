@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import Head from "next/head";
+import SSRProvider from 'react-bootstrap/SSRProvider';
 
 
 function MyApp({Component, pageProps}) {
@@ -16,9 +17,9 @@ function MyApp({Component, pageProps}) {
 
                 <meta charSet="utf-8"/>
             </Head>
-
+<SSRProvider>
             <Component {...pageProps} />
-
+</SSRProvider>
         </>
     )
 }
