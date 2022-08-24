@@ -21,42 +21,37 @@ export default function Navbar2() {
             <Col xs={9} sm={10} md={10} lg={6} style={{paddingInline: "30px"}}>
                 <Image src="/brendMelek5.png" height={70} width={469}/>
             </Col>
-            <Col >
+            <Col>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             </Col>
             <Container>
-            <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
-                <Nav>
-                    <Link href="/404"><a className="nav-link">Допомогти</a></Link>
-                    {/*<Link href="#pricing"><Nav>Новини</Nav></Link>*/}
-                    <Nav.Link href="#pricing">Пронас</Nav.Link>
-                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                            Another action
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider/>
-                        <NavDropdown.Item href="#action/3.4">
-                            Separated link
-                        </NavDropdown.Item>
-                    </NavDropdown>
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
                     <Nav>
-                        <Link href="/payment">
-                        <Button variant="primary">
-                            Допомогти
-                        </Button>
-                        </Link>
-                    </Nav>
+                        <Link href="/"><a className="nav-link">Новини</a></Link>
+                        <NavDropdown title="Про Фонд" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Історія Фонду</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Наші проекти</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">Звіти</NavDropdown.Item>
+                            <NavDropdown.Divider/>
+                            <NavDropdown.Item href="#action/3.4">Документи</NavDropdown.Item>
+                        </NavDropdown>
+                        <Link href="/news"><a className="nav-link">Потреби ЗСУ</a></Link>
+                        <Nav>
+                            <Link href="/payment">
+                                <Button variant="primary">
+                                    Допомогти
+                                </Button>
+                            </Link>
+                        </Nav>
 
-                </Nav>
-                {/*  <Nav>
+                    </Nav>
+                    {/*  <Nav>
                         <Nav.Link href="#deets">More deets</Nav.Link>
                         <Nav.Link eventKey={2} href="#memes">
                             Dank memes
                         </Nav.Link>
                     </Nav>*/}
-            </Navbar.Collapse>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
 
