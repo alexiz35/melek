@@ -20,7 +20,9 @@ export default function LayoutMain({children}) {
 
 
             <main className={styles.container}>
+                <Container>
                 {children}
+                </Container>
             </main>
 
 

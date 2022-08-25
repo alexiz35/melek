@@ -2,6 +2,11 @@ import Head from 'next/head'
 import React from "react";
 import Container from "react-bootstrap/Container";
 import LayoutMain from "../components/LayoutMain";
+import PayForm from "../components/PayForm";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Image from "next/image"
+
 
 
 export default function Home() {
@@ -14,11 +19,16 @@ export default function Home() {
             </Head>
             <LayoutMain>
 
-                    <Container>
+                        <Row >
+                            <Col className="mt-2">
+                        <Image src="/mainImg.jpg" width={1000} height={600}/>
+                            </Col>
+                            <Col>
+                        <PayForm />
 
-                        <h1>Hello</h1>
+                            </Col>
+                        </Row>
 
-                    </Container>
 
             </LayoutMain>
 
