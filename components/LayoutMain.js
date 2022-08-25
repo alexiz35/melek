@@ -4,6 +4,7 @@ import styles from "../styles/LayoutMain.module.css";
 import Marquee from "react-fast-marquee/dist";
 import Navbar2 from "./Navbar";
 import Container from "react-bootstrap/Container";
+import Footer from "./Footer";
 
 export default function LayoutMain({children}) {
     return (
@@ -21,12 +22,13 @@ export default function LayoutMain({children}) {
 
             <main className={styles.container}>
                 <Container className="justify-content-center">
-                {children}
+                    {children}
                 </Container>
             </main>
 
-
-            {/*<Footer/>*/}
+            <footer className={styles.footer}>
+                <Footer/>
+            </footer>
         </>
 
     )

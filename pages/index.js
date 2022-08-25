@@ -6,7 +6,9 @@ import PayForm from "../components/PayForm";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "next/image"
-
+import CarouselFade from "../components/CarouselFade";
+import CardHelp from "../components/CardHelp";
+import Button from "react-bootstrap/Button";
 
 
 export default function Home() {
@@ -19,32 +21,78 @@ export default function Home() {
             </Head>
             <LayoutMain>
 
-                        <Row >
-                            <Col className="mt-2">
-                        <Image src="/mainImg.jpg" width={1000} height={600}/>
-                            </Col>
-                            <Col>
-                        <PayForm />
+                <Row>
+                    <CarouselFade/>
+                </Row>
+                <Row className="text-center mt-4">
+                    <h1>Головна наша місія - Допомога тим, хто найбільше її потребує</h1>
+                    <h4>Наш Фонд був заснований у 2019 році, кожного дня наша команда волонтерів працює за для
+                        досягнення спільної мети. Разом з нашими партнерами та благодійниками ми реалізуємо дуже важливі
+                        проекти
+                    </h4>
+                    <h2>Чим ми займаємось</h2>
+                    <h3 className="text-decoration-underline mb-3">Допомога ЗСУ</h3>
+                </Row>
+                <Row className="justify-content-center">
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/javel.jpg" tittle="Польова війскова медицина"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/javel.jpg" tittle="Амуніція"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/javel.jpg" tittle="Оптика"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/javel.jpg" tittle="Транспорт"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/javel.jpg" tittle="Харчування"/>
+                    </Col>
+                </Row>
+                <Row>
+                    <h3 className="text-decoration-underline text-center mb-3 mt-3">Допомога ВПО та МЗС</h3>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/cat.jpg" tittle="Харчова допомога"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/cat.jpg" tittle="Одяг та предмети побуту"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <CardHelp path="/cat.jpg" tittle="Дитячі товари та харчування"/>
+                    </Col>
+                </Row>
+                <Row className="text-center mt-4 ">
+                    <h3>Збір коштів на потреби ЗСУ</h3>
+                    <h5>До нас щодня звертаються війскові частини з проханням допомгти їм з придбанням необхідних речей,
+                        тактичного обладнання, авто тощо...
+                    </h5>
+                    <h4>Відкриті проекти</h4>
+                    <div className="d-flex justify-content-center">
+                        <Col xs={8} sm={8} md={4}>
+                            <PayForm/>
+                        </Col>
 
-                            </Col>
-                        </Row>
+                    </div>
+                    <Row className="d-flex justify-content-center mt-5">
+                        <Col xs={8} sm={8} md={4}>
+                            <Button variant="outline-dark" size="lg">
+                                Збір речей для бійців на "Нулі"
+                            </Button>
+                        </Col>
+                    </Row>
+                    <Row className="d-flex justify-content-center mt-5 mb-5">
+                        <Col xs={8} sm={8} md={4}>
+                            <Button variant="outline-dark" size="lg">
+                                Збір речей для бійців на "Нулі"
+                            </Button>
+                        </Col>
+                    </Row>
+                </Row>
 
 
             </LayoutMain>
 
         </>
     )
-}
-{/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>*/
 }

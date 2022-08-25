@@ -49,10 +49,10 @@ export default function payment() {
                                 звертайтеся, будь ласка, за номерами телефону:
                             </h6>
                         </Col>
-                        <Row className="mt-4">
+                        <Row className="mt-4 mb-4">
                             <h3>Також можно переказати кошти на рахунок Фонду</h3>
-                            <h5>Реквізити Фонду "Melek"</h5>
-                            <Table responsive striped bordered hover size="sm">
+                            <h5>Реквізити Фонду Melek</h5>
+                            <Table responsive striped bordered hover size={"sm"} >
                                 <thead>
                                     <tr>
                                         <th>
