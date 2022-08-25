@@ -20,7 +20,7 @@ export default function LayoutMain({children}) {
 
 
             <main className={styles.container}>
-                <Container>
+                <Container className="justify-content-center">
                 {children}
                 </Container>
             </main>

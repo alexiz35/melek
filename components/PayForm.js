@@ -36,12 +36,11 @@ export default function PayForm() {
 
     return (
         <>
-            <Container className="justify-content-end">
             <Form className="border border-success rounded-2 bg-light text-dark mt-2"
-                  style={{width: "380px", height: "310px"}}>
+                  style={{minWidth:"260px",height: "310px"}}>
                 <Row className="justify-content-center">
                     <Form.Text className="text-center mt-2"><h6>Долучитись до допомоги ЗСУ</h6></Form.Text>
-                    <Col xs={8}>
+                    <Col xs={10}>
 
                         <Row className="mt-3">
                             <Button as={Col} id="100" variant="outline-dark" className="mx-2" onClick={handleClick}>
@@ -81,7 +80,6 @@ export default function PayForm() {
                     </Col>
                 </Row>
             </Form>
-            </Container>
         </>
     )
 }
