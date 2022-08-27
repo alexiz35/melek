@@ -35,61 +35,71 @@ export default function Home() {
                 </Row>
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Польова війскова медицина"/>
+                        <CardHelp path="/javel.jpg" tittle="Польова війскова медицина"
+                                  textContent="Збираємо набори для польових медиків/санчасті"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Амуніція"/>
+                        <CardHelp path="/javel.jpg" tittle="Амуніція"
+                                  textContent="Робимо та купляєм наколенники, розгрузки, плитоноски, підсумок
+                                  сбросу, підсумки под аптечку, под турнікет, стропа евакуаціїї ,
+                                  кікімора (шугайстр)"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Оптика"/>
+                        <CardHelp path="/javel.jpg" tittle="Оптика"
+                                  textContent="Закупаємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
+                                   монікуляри"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Транспорт"/>
+                        <CardHelp path="/javel.jpg" tittle="Транспорт" textContent="Пошук, закупівля, ремонт,
+                         фарбування автівок для ЗСУ"/>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Харчування"/>
+                        <CardHelp path="/javel.jpg" tittle="Харчування" textContent="Виготовлення субліматів, постачання
+                         води, овочів, крупи, тушонки, консервація"
+                        />
                     </Col>
                 </Row>
                 <Row>
-                    <h3 className="text-decoration-underline text-center mb-3 mt-3">Допомога ВПО та МЗС</h3>
+                    <h3 className="text-decoration-underline text-center mb-3 mt-3">Допомога ВПО та СЖО</h3>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Харчова допомога"/>
+                        <CardHelp path="/cat.jpg" tittle="Харчова допомога" textContent="Забеспечуємо продуктами
+                        харчування ВПО та СЖО"/>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Одяг та предмети побуту"/>
+                        <CardHelp path="/cat.jpg" tittle="Одяг та предмети побуту" textContent="Збираємо
+                        набори для польових медиків/санчасті"/>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Дитячі товари та харчування"/>
+                        <CardHelp path="/cat.jpg" tittle="Дитячі товари та харчування" textContent="Забеспечння діточок
+                        необхідними предметами гігієни, іграшками, одягом та продуктами харчування"/>
+                    </Col>
+                    <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={12}>
+                        <CardHelp path="/cat.jpg" tittle="Юридична допомога" textContent="Надання безкоштовної юр.
+                        допомоги, консультація з приводу майна, відновлення втраченних документів,
+                        оформлення юр.послуг"/>
                     </Col>
                 </Row>
-                <Row className="text-center mt-4 ">
+                <Row className="text-center justify-content-center mt-4 ">
                     <h3>Збір коштів на потреби ЗСУ</h3>
                     <h5>До нас щодня звертаються війскові частини з проханням допомгти їм з придбанням необхідних речей,
                         тактичного обладнання, авто тощо...
                     </h5>
                     <h4>Відкриті проекти</h4>
-                    <div className="d-flex justify-content-center">
-                        <Col xs={8} sm={8} md={4}>
-                            <PayForm/>
-                        </Col>
+                    <Row className=" justify-content-center w-75" >
 
-                    </div>
-                    <Row className="d-flex justify-content-center mt-5">
-                        <Col xs={8} sm={8} md={4}>
-                            <Button variant="outline-dark" size="lg">
-                                Збір речей для бійців на "Нулі"
-                            </Button>
-                        </Col>
-                    </Row>
-                    <Row className="d-flex justify-content-center mt-5 mb-5">
-                        <Col xs={8} sm={8} md={4}>
-                            <Button variant="outline-dark" size="lg">
-                                Збір речей для бійців на "Нулі"
-                            </Button>
-                        </Col>
+                        <PayForm/>
+
+                        <Button variant="outline-dark mt-5 btn-block" size="lg" style={{height:"100px"}}>
+                            Збір речей для бійців на "Нулі"
+                        </Button>
+                        <Button variant="outline-dark mt-5 mb-5 btn-block" size="lg" style={{height:"100px"}}>
+                            Збір речей для бійців на "Нулі"
+                        </Button>
                     </Row>
                 </Row>
-
 
             </LayoutMain>
 

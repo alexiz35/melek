@@ -1,24 +1,26 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React from "react";
 
-function CarouselFade () {
+function CarouselFade() {
     return (
-        <Carousel fade >
+        <Carousel fade>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="/mainImg.jpg"
+                    src="/Carousel/ImgCarousel2.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h3 style={{color:"white", textShadow:"0 0 9px red"}}>Допомога цивільним, жертвам нападу Росії на Україну</h3>
+                    <p style={{color:"white", textShadow:"0 0 9px red"}}>Війна. Зруйновані міста й села, сплюндрована українська земля, вбито тисячі невинних людей,
+                        понівечено мільйони людських доль.Наша армія героїчно захищає Україну, а нам потрібно допомогти
+                    у тилу людям, які втратили все через напад Росії.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            {/*<Carousel.Item>
+            <Carousel.Item>
                 <img
                     className="d-block w-100 "
-                    src="helpImg.jpg"
+                    src="/Carousel/ImgCarousel3.jpg"
                     alt="Second slide"
                 />
 
@@ -30,7 +32,7 @@ function CarouselFade () {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src="/Carousel/ImgCarousel4.jpg"
                     alt="Third slide"
                 />
 
@@ -40,7 +42,21 @@ function CarouselFade () {
                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                     </p>
                 </Carousel.Caption>
-            </Carousel.Item>*/}
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="/Carousel/ImgCarousel5.jpg"
+                    alt="Fourth slide"
+                />
+
+                <Carousel.Caption>
+                    <h3>Fourth slide label</h3>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
     );
 }
