@@ -35,30 +35,47 @@ export default function Home() {
                 </Row>
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Польова війскова медицина"
-                                  textContent="Збираємо набори для польових медиків/санчасті"
+                        <CardHelp
+                            path="/javel.jpg"
+                            activeKey="medicine"
+                            tittle="Польова війскова медицина"
+                            textContent="Збираємо набори для польових медиків/санчасті"
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Амуніція"
-                                  textContent="Робимо та купляєм наколенники, розгрузки, плитоноски, підсумок
+                        <CardHelp
+                            path="/javel.jpg"
+                            activeKey="ammunition"
+                            tittle="Амуніція"
+                            textContent="Робимо та купляєм наколенники, розгрузки, плитоноски, підсумок
                                   сбросу, підсумки под аптечку, под турнікет, стропа евакуаціїї ,
                                   кікімора (шугайстр)"
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Оптика"
-                                  textContent="Закупаємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
+                        <CardHelp
+                            path="/javel.jpg"
+                            activeKey="optic"
+                            tittle="Оптика"
+                            textContent="Закупаємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
                                    монікуляри"
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Транспорт" textContent="Пошук, закупівля, ремонт,
-                         фарбування автівок для ЗСУ"/>
+                        <CardHelp
+                            path="/javel.jpg"
+                            activeKey="car"
+                            tittle="Транспорт"
+                            textContent="Пошук, закупівля, ремонт,
+                                        фарбування автівок для ЗСУ"/>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/javel.jpg" tittle="Харчування" textContent="Виготовлення субліматів, постачання
-                         води, овочів, крупи, тушонки, консервація"
+                        <CardHelp
+                            path="/javel.jpg"
+                            activeKey="product"
+                            tittle="Харчування"
+                            textContent="Виготовлення субліматів, постачання
+                                    води, овочів, крупи, тушонки, консервація"
                         />
                     </Col>
                 </Row>
@@ -88,14 +105,14 @@ export default function Home() {
                         тактичного обладнання, авто тощо...
                     </h5>
                     <h4>Відкриті проекти</h4>
-                    <Row className=" justify-content-center w-75" >
+                    <Row className=" justify-content-center w-75">
 
                         <PayForm/>
 
-                        <Button variant="outline-dark mt-5 btn-block" size="lg" style={{height:"100px"}}>
+                        <Button variant="outline-dark mt-5 btn-block" size="lg" style={{height: "100px"}}>
                             Збір речей для бійців на "Нулі"
                         </Button>
-                        <Button variant="outline-dark mt-5 mb-5 btn-block" size="lg" style={{height:"100px"}}>
+                        <Button variant="outline-dark mt-5 mb-5 btn-block" size="lg" style={{height: "100px"}}>
                             Збір речей для бійців на "Нулі"
                         </Button>
                     </Row>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Row from "react-bootstrap/Row";
 import Head from "next/head";
 import Image from "next/image";
@@ -6,8 +6,21 @@ import Accordion from "react-bootstrap/Accordion"
 import LayoutMain from "../components/LayoutMain";
 import Container from "react-bootstrap/Container";
 import styles from "../styles/Projects.module.css";
+import Gallery from "react-grid-gallery";
+import {medicImages, ammunImages, opticImages, autoImages, productImages} from "../components/ProjectImages";
+import {useRouter} from "next/router";
+
 
 export default function projects() {
+
+    const router = useRouter()
+
+        console.log(router.query.optic)
+
+
+
+
+
     return (
         <>
             <Head>
@@ -17,32 +30,110 @@ export default function projects() {
             </Head>
             <LayoutMain>
                 <Container>
-                    <Accordion defaultActiveKey="0">
-                        <Accordion.Item eventKey="0" >
-                            <Accordion.Header >Польова війскова медицина</Accordion.Header>
-                            <Accordion.Body >
-                                <Container className="d-flex justify-content-between ju">
-                                <img src="/cat.jpg" width={200} height={200} className={styles.scale}/>
-                                <Image src="/cat.jpg" width={200} height={200} />
-                                <Image src="/cat.jpg" width={200} height={200} />
-                                <Image src="/cat.jpg" width={200} height={200} />
-                                <Image src="/cat.jpg" width={200} height={200} />
-                                </Container>
+                    <h1>Наші проекти</h1>
+                    <Accordion defaultActiveKey={router.query.activeKey}>
+                        <Accordion.Item eventKey="medicine">
+                            <Accordion.Header>Польова війскова медицина</Accordion.Header>
+                            <Accordion.Body>
+                                <div style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={medicImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                            <Accordion.Header>Accordion Item #2</Accordion.Header>
+                        <Accordion.Item eventKey="ammunition">
+                            <Accordion.Header>Амуніція</Accordion.Header>
                             <Accordion.Body>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
+                                <div style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={ammunImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="optic" >
+                            <Accordion.Header >Оптика</Accordion.Header>
+                            <Accordion.Body>
+                                <div id="optic" style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={opticImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="car">
+                            <Accordion.Header>Транспорт</Accordion.Header>
+                            <Accordion.Body>
+                                <div style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={autoImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="product">
+                            <Accordion.Header>Харчування</Accordion.Header>
+                            <Accordion.Body>
+                                <div style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={productImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
+                    <h2><a href="https://www.facebook.com/groups/779859472357564">Детальніше на Facebook</a></h2>
                 </Container>
             </LayoutMain>
 

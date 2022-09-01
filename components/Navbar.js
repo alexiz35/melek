@@ -29,11 +29,19 @@ export default function Navbar2() {
                     <Nav>
                         <Link href="/"><a className="nav-link">Новини</a></Link>
                         <NavDropdown title="Про Фонд" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Історія Фонду</NavDropdown.Item>
-                            <NavDropdown.Item href="/projects">Наші проекти</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Звіти</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link href="#action/3.1"><a className="nav-link">Історія Фонду</a></Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link href="#action/3.3"><a className="nav-link">Звіти</a></Link>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider/>
-                            <NavDropdown.Item href="#action/3.4">Документи</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link href="#action/3.4"><a className="nav-link"> Документи</a></Link>
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <Link href="/news"><a className="nav-link">Потреби ЗСУ</a></Link>
                         <Nav>
