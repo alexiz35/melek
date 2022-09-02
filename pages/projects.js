@@ -10,7 +10,7 @@ import {useRouter} from "next/router";
 import Link from "next/link";
 
 
-export default function projects() {
+export default function Projects() {
 
     const router = useRouter()
 
