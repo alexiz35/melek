@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Row from "react-bootstrap/Row";
 import Head from "next/head";
 import Image from "next/image";
@@ -9,17 +9,16 @@ import styles from "../styles/Projects.module.css";
 import Gallery from "react-grid-gallery";
 import {medicImages, ammunImages, opticImages, autoImages, productImages} from "../components/ProjectImages";
 import {useRouter} from "next/router";
+import Link from "next/link";
 
 
 export default function projects() {
 
     const router = useRouter()
 
-        console.log(router.query.optic)
-
-
-
-
+    /*useEffect(()=>{
+        Link("/#startProject")
+    })*/
 
     return (
         <>
@@ -30,8 +29,8 @@ export default function projects() {
             </Head>
             <LayoutMain>
                 <Container>
-                    <h1>Наші проекти</h1>
-                    <Accordion defaultActiveKey={router.query.activeKey}>
+                    <h1 id="startProject">Наші проекти</h1>
+                    <Accordion defaultActiveKey={router.query.activeKey} >
                         <Accordion.Item eventKey="medicine">
                             <Accordion.Header>Польова війскова медицина</Accordion.Header>
                             <Accordion.Body>
