@@ -1,7 +1,5 @@
-import React, {useEffect, useState} from "react";
-import Row from "react-bootstrap/Row";
+import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Accordion from "react-bootstrap/Accordion"
 import LayoutMain from "../components/LayoutMain";
 import Container from "react-bootstrap/Container";
@@ -16,9 +14,6 @@ export default function projects() {
 
     const router = useRouter()
 
-    /*useEffect(()=>{
-        Link("/#startProject")
-    })*/
 
     return (
         <>
