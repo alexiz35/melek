@@ -5,3 +5,40 @@
     transform: scale(1.4); /* Увеличиваем масштаб */
     z-index: 2000;
 }
+
+.wrapCard {
+    display: block;
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    height: 18rem;
+    perspective: 1000px;
+    /*transform-style: preserve-3d;*/
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all 1s ease-out;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front{
+    transform: rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: rotateY(360deg);
+}

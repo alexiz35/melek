@@ -36,7 +36,8 @@ export default function Home() {
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
-                            path="/javel.jpg"
+                            pathFront="/javel.jpg"
+                            pathBack="/myMono.jpg"
                             activeKey="medicine"
                             tittle="Польова війскова медицина"
                             textContent="Збираємо набори для польових медиків/санчасті"
@@ -44,7 +45,8 @@ export default function Home() {
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
-                            path="/javel.jpg"
+                            pathFront="/javel.jpg"
+                            pathBack="/myMono.jpg"
                             activeKey="ammunition"
                             tittle="Амуніція"
                             textContent="Робимо та купляєм наколенники, розгрузки, плитоноски, підсумок
@@ -54,7 +56,8 @@ export default function Home() {
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
-                            path="/javel.jpg"
+                            pathFront="/javel.jpg"
+                            pathBack="/myMono.jpg"
                             activeKey="optic"
                             tittle="Оптика"
                             textContent="Закупаємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
@@ -63,7 +66,8 @@ export default function Home() {
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
-                            path="/javel.jpg"
+                            pathFront="/javel.jpg"
+                            pathBack="/myMono.jpg"
                             activeKey="car"
                             tittle="Транспорт"
                             textContent="Пошук, закупівля, ремонт,
@@ -71,7 +75,8 @@ export default function Home() {
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
-                            path="/javel.jpg"
+                            pathFront="/javel.jpg"
+                            pathBack="/myMono.jpg"
                             activeKey="product"
                             tittle="Харчування"
                             textContent="Виготовлення субліматів, постачання
