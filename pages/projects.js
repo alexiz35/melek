@@ -7,10 +7,9 @@ import styles from "../styles/Projects.module.css";
 import Gallery from "react-grid-gallery";
 import {medicImages, ammunImages, opticImages, autoImages, productImages} from "../components/ProjectImages";
 import {useRouter} from "next/router";
-import Link from "next/link";
 
 
-export default function Projects() {
+export default function Projects(props) {
 
     const router = useRouter()
 
@@ -25,7 +24,7 @@ export default function Projects() {
             <LayoutMain>
                 <Container>
                     <h1 id="startProject">Наші проекти</h1>
-                    <Accordion defaultActiveKey={router.query.activeKey} >
+                    <Accordion defaultActiveKey={props.activeKey} >
                         <Accordion.Item eventKey="medicine">
                             <Accordion.Header>Польова війскова медицина</Accordion.Header>
                             <Accordion.Body>
@@ -133,4 +132,10 @@ export default function Projects() {
 
         </>
     )
+}
+
+Projects.getInitialProps = ({query}) => {
+    return {
+        activeKey: query.activeKey
+    }
 }

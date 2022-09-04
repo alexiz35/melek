@@ -13,7 +13,7 @@ import styles from "../styles/LayoutMain.module.css";
 import Marquee from "react-fast-marquee/dist";
 
 
-export default function Navbar2() {
+export default function MyNavbar() {
     return (
 
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
