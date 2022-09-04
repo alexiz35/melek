@@ -40,7 +40,7 @@ export default function Navbar2() {
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>
-                                <Link href="#action/3.4"><a className="nav-link"> Документи</a></Link>
+                                <Link href="/docPage"><a className="nav-link"> Документи</a></Link>
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Link href="/news"><a className="nav-link">Потреби ЗСУ</a></Link>

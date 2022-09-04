@@ -87,21 +87,41 @@ export default function Home() {
                 <Row>
                     <h3 className="text-decoration-underline text-center mb-3 mt-3">Допомога ВПО та СЖО</h3>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Харчова допомога" textContent="Забеспечуємо продуктами
-                        харчування ВПО та СЖО"/>
+                        <CardHelp
+                            pathFront="/cat.jpg"
+                            pathBack="/myMono.jpg"
+                            tittle="Харчова допомога"
+                            textContent="Забеспечуємо продуктами
+                                        харчування ВПО та СЖО"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Одяг та предмети побуту" textContent="Збираємо
-                        набори для польових медиків/санчасті"/>
+                        <CardHelp
+                            pathFront="/cat.jpg"
+                            pathBack="/myMono.jpg"
+                            tittle="Одяг та предмети побуту"
+                            textContent="Збираємо
+                                        набори для польових медиків/санчасті"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
-                        <CardHelp path="/cat.jpg" tittle="Дитячі товари та харчування" textContent="Забеспечння діточок
-                        необхідними предметами гігієни, іграшками, одягом та продуктами харчування"/>
+                        <CardHelp
+                            pathFront="/cat.jpg"
+                            pathBack="/myMono.jpg"
+                            tittle="Дитячі товари та харчування"
+                            textContent="Забеспечння діточок
+                                необхідними предметами гігієни, іграшками, одягом та продуктами харчування"
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={12}>
-                        <CardHelp path="/cat.jpg" tittle="Юридична допомога" textContent="Надання безкоштовної юр.
-                        допомоги, консультація з приводу майна, відновлення втраченних документів,
-                        оформлення юр.послуг"/>
+                        <CardHelp
+                            pathFront="/cat.jpg"
+                            pathBack="/myMono.jpg"
+                            tittle="Юридична допомога"
+                            textContent="Надання безкоштовної юр.
+                                    допомоги, консультація з приводу майна, відновлення втраченних документів,
+                                    оформлення юр.послуг"
+                        />
                     </Col>
                 </Row>
                 <Row className="text-center justify-content-center mt-4 ">
