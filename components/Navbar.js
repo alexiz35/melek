@@ -30,7 +30,7 @@ export default function MyNavbar() {
                         <Link href="/"><a className="nav-link">Новини</a></Link>
                         <NavDropdown title="Про Фонд" id="collasible-nav-dropdown">
                             <NavDropdown.Item>
-                                <Link href="#action/3.1"><a className="nav-link">Історія Фонду</a></Link>
+                                <Link href="/fond"><a className="nav-link">Про фонд</a></Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>

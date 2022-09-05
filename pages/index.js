@@ -46,6 +46,7 @@ export default function Home(props) {
                     <h2>Чим ми займаємось</h2>
                     <h3 className="text-decoration-underline mb-3">Допомога ЗСУ</h3>
                 </Row>
+{/*-----------------------------------------------Cards help for AFU---------------------------------------------------*/}
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
@@ -97,6 +98,7 @@ export default function Home(props) {
                         />
                     </Col>
                 </Row>
+{/*-----------------------------------------------Cards help for people------------------------------------------------*/}
                 <Row>
                     <h3 className="text-decoration-underline text-center mb-3 mt-3">Допомога ВПО та СЖО</h3>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -136,6 +138,7 @@ export default function Home(props) {
                                     оформлення юр.послуг"
                         />
                     </Col>
+{/*---------------------------------------------------------------------------------------------------------------------*/}
                 </Row>
                 <Row className="text-center justify-content-center mt-4 ">
                     <h3>Збір коштів на потреби ЗСУ</h3>

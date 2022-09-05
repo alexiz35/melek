@@ -6,16 +6,24 @@ import MyNavbar from "./Navbar";
 import Container from "react-bootstrap/Container";
 import Footer from "./Footer";
 import AppContext from "../context/AppContext";
+import {useMediaQuery} from "react-responsive"
 
 export default function LayoutMain({children}) {
 
     const [warString] = useContext(AppContext)
+    const isMobile = useMediaQuery({query: "(max-width: 576px)"})
+
 
     return (
         <>
             <header className={styles.header}>
 
-                <Marquee direction="right" speed={180} className={styles.runString}>
+                <Marquee
+                    /*direction="right"*/
+                    speed={120}
+                    gradientColor={[250,250,25]}
+                    gradientWidth={isMobile?100:300}
+                    className={styles.runString}>
                     {warString.day}-й день війни росії проти України, наразі вже знищено {warString.person} російских
                     загарбників
                 </Marquee>
