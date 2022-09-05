@@ -25,7 +25,6 @@ export default function Home(props) {
         loadData()
     },[])
 
-    console.log("index", warString)
     return (
         <>
             <Head>
