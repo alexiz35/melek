@@ -4,8 +4,12 @@ import LayoutMain from "../components/LayoutMain";
 import Container from "react-bootstrap/Container";
 import Gallery from "react-grid-gallery";
 import {fondImages} from "../components/FondImages";
+import Marquee from "react-fast-marquee/dist";
+import Image from "next/image";
+import {useMediaQuery} from "react-responsive";
 
 export default function Fond() {
+    const isMobile = useMediaQuery({query: "(max-width: 576px)"})
         return (
          <>
              <Head>
@@ -34,13 +38,24 @@ export default function Fond() {
                              enableLightbox={true}
                              enableImageSelection={false}
                              backdropClosesModal={true}
-                             margin={50}
+                             margin={isMobile?2:40}
                          />
 
                      </div>
 
                  </Container>
 
+                 <h3 className="text-center my-5">Наші партнери</h3>
+                 <Marquee
+                     /*direction="right"*/
+                     gradientWidth={isMobile?100:200}
+                     speed={100}
+                     >
+                     <Image src={"/fond/partner/zarog.png"} height={55} width={222} />
+                     <Image src={"/fond/partner/kernel-logo.png"} height={55} width={222} />
+                     <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
+
+                 </Marquee>
 
              </LayoutMain>
          </>
