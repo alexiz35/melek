@@ -21,7 +21,6 @@ function MyApp({Component, pageProps}) {
                 <title>Melek</title>
                 <meta name="keywords" content="text, keywords,rere"/>
                 <meta name="description" content="this is my first site on react-next"/>
-
                 <meta charSet="utf-8"/>
             </Head>
             <AppContext.Provider value={contextValue}>

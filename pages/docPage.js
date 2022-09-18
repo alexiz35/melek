@@ -4,15 +4,10 @@ import LayoutMain from "../components/LayoutMain";
 import Gallery from "react-grid-gallery";
 import {productImages} from "../components/ProjectImages";
 import {docImages} from "../components/DocImages";
+import {useMediaQuery} from "react-responsive";
 
 export default function DocPage() {
-    const docList = [
-        {
-           path: "/documents/dovidka1.jpg",
-           name: "Довідка 1"
-
-        }
-    ]
+    const isMobile = useMediaQuery({query: "(max-width: 576px)"})
     return (
     <>
         <Head>
@@ -33,10 +28,11 @@ export default function DocPage() {
             }}>
                 <Gallery
                     images={docImages}
+                    rowHeight={500}
                     enableLightbox={true}
                     enableImageSelection={false}
                     backdropClosesModal={true}
-                    margin={50}
+                    margin={isMobile?2:20}
                 />
 
             </div>

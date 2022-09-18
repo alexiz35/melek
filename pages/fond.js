@@ -19,8 +19,6 @@ export default function Fond() {
              </Head>
              <LayoutMain>
 
-                 <Container>
-
                      <h1>Історія Фонду</h1>
                      <h3>Місія Фонду</h3>
                      <h3>Відзнаки Фонду</h3>
@@ -35,27 +33,28 @@ export default function Fond() {
                      }}>
                          <Gallery
                              images={fondImages}
+                             rowHeight={500}
                              enableLightbox={true}
                              enableImageSelection={false}
                              backdropClosesModal={true}
-                             margin={isMobile?2:40}
+                             margin={isMobile?2:20}
                          />
 
                      </div>
+                     <div className="pb-5">
+                         <h3 className="text-center my-5">Наші партнери</h3>
+                         <Marquee
+                             /*direction="right"*/
+                             gradientWidth={isMobile?100:200}
+                             speed={100}
+                         >
+                             <Image src={"/fond/partner/zarog.png"} height={55} width={222} />
+                             <Image src={"/fond/partner/kernel-logo.png"} height={55} width={222} />
+                             <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
 
-                 </Container>
+                         </Marquee>
+                     </div>
 
-                 <h3 className="text-center my-5">Наші партнери</h3>
-                 <Marquee
-                     /*direction="right"*/
-                     gradientWidth={isMobile?100:200}
-                     speed={100}
-                     >
-                     <Image src={"/fond/partner/zarog.png"} height={55} width={222} />
-                     <Image src={"/fond/partner/kernel-logo.png"} height={55} width={222} />
-                     <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
-
-                 </Marquee>
 
              </LayoutMain>
          </>
