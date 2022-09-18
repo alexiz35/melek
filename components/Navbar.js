@@ -27,7 +27,7 @@ export default function MyNavbar() {
             <Container>
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
                     <Nav>
-                        <Link href="/"><a className="nav-link">Новини</a></Link>
+                        <Link href="/"><a className="nav-link">Головна</a></Link>
                         <NavDropdown title="Про Фонд" id="collasible-nav-dropdown">
                             <NavDropdown.Item>
                                 <Link href="/fond"><a className="nav-link">Про фонд</a></Link>

@@ -16,7 +16,7 @@ export default function Payment() {
 
     useEffect(() => {
         isMobile ?
-            setMono(<a href={"https://nextjs.org/docs/api-reference/next/image"}>
+            setMono(<a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
                 <Image src={"/monoPay.png"} width={300} height={400}/>
             </a>)
             :
@@ -56,8 +56,10 @@ export default function Payment() {
                             </Col>
                             <Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3">
                                 <h6 className="mt-2 mb-3">Для власників карток інших банків</h6>
-
-                                <PayForm/>
+                                <a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
+                                    <Image src={"/monoPay.png"} width={300} height={400}/>
+                                </a>
+                                {/*<PayForm/>*/}
                             </Col>
 
                         </Row>

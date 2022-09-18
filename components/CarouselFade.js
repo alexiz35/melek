@@ -11,10 +11,10 @@ function CarouselFade() {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 style={{color:"white", textShadow:"0 0 9px red"}}>Допомога цивільним, жертвам нападу Росії на Україну</h3>
-                    <p style={{color:"white", textShadow:"0 0 9px red"}}>Війна. Зруйновані міста й села, сплюндрована українська земля, вбито тисячі невинних людей,
-                        понівечено мільйони людських доль.Наша армія героїчно захищає Україну, а нам потрібно допомогти
-                    у тилу людям, які втратили все через напад Росії.</p>
+                    <h3 style={{color:"white", textShadow:"0 0 9px black"}}>Допомога війсковим та цивільним</h3> {/*textShadow:"0 0 9px red"*/}
+                    <p style={{color:"white",textShadow:"0 0 9px black"}}>Війна. Зруйновані міста й села, вбито тисячі невинних людей,
+                        понівечено мільйони людських доль.Наша армія героїчно боронить Україну, а нам потрібно допомогти
+                    у тилу нашим захисникам та людям, які втратили все через напад Росії.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -25,8 +25,7 @@ function CarouselFade() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 style={{color:"white", textShadow:"0 0 9px black"}}>Наші котики</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -37,10 +36,7 @@ function CarouselFade() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <h3 style={{color:"white", textShadow:"0 0 9px black"}}>Підтримуйте ЗСУ</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -51,10 +47,7 @@ function CarouselFade() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Fourth slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <h3 style={{color:"white", textShadow:"0 0 9px black"}}>Разом до Перемоги!</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

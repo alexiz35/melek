@@ -11,12 +11,16 @@ import CardHelp from "../components/CardHelp";
 import Button from "react-bootstrap/Button";
 import AppContext from "../context/AppContext";
 import Link from "next/link";
+import Marquee from "react-fast-marquee/dist";
+import {useMediaQuery} from "react-responsive";
 
 
 export default function Home(props) {
 
     const warData = {day: props.warData.data.day, person: props.warData.data.stats.personnel_units}
     const [warString,setWarString] = useContext(AppContext)
+    const isMobile = useMediaQuery({query: "(max-width: 576px)"})
+
 
     const loadData = useCallback(()=>{
         setWarString(warData)
@@ -38,9 +42,10 @@ export default function Home(props) {
                 <Row>
                     <CarouselFade/>
                 </Row>
-                <Row className="text-center mt-4">
+                <Row className="text-center justify-content-center mt-4">
                     <h1>Головна наша місія - Допомога тим, хто найбільше цього потребує</h1>
-                    <h4>Наш Фонд був заснований у 2018 році, кожного дня наша команда волонтерів працює задля
+
+                    <h4 className="text-center" style={{maxWidth:"1100px"}}>Наш Фонд був заснований у 2018 році, кожного дня наша команда волонтерів працює задля
                         досягнення спільної мети. Разом з нашими партнерами та благодійниками ми реалізуємо дуже важливі
                         проекти
                     </h4>
@@ -50,6 +55,7 @@ export default function Home(props) {
 {/*-----------------------------------------------Cards help for AFU---------------------------------------------------*/}
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
+                        <Link href={"/news"}>
                         <CardHelp
                             pathFront="/javel.jpg"
                             pathBack="/myMono.jpg"
@@ -57,7 +63,9 @@ export default function Home(props) {
                             tittle="Польова війскова медицина"
                             textContent="Збираємо індивідуальні війскові аптечки(для першої допомоги)
                                             та набори для польових медиків/санчасті"
+                            rotate={!isMobile}
                         />
+                        </Link>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
@@ -68,6 +76,8 @@ export default function Home(props) {
                             textContent="виготовляємо наколінники, розгрузки, рпс, плитоноски, підсумок
                                   сбросу, підсумки під аптечку, під турнікет, стропа евакуації,
                                   кікімора (шугайстр)"
+                            rotate={!isMobile}
+
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -78,6 +88,8 @@ export default function Home(props) {
                             tittle="Оптика"
                             textContent="Закуповуємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
                                    монокуляри"
+                            rotate={!isMobile}
+
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -87,7 +99,10 @@ export default function Home(props) {
                             activeKey="car"
                             tittle="Транспорт"
                             textContent="Пошук, закупівля, ремонт,
-                                        фарбування автівок для ЗСУ"/>
+                                        фарбування автівок для ЗСУ"
+                            rotate={!isMobile}
+
+                        />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
@@ -97,6 +112,8 @@ export default function Home(props) {
                             tittle="Харчування"
                             textContent="Виготовлення субліматів, тушонки, консервів, кондитерських виробів. Постачання
                                     води, овочів, крупи, консервації"
+                            rotate={!isMobile}
+
                         />
                     </Col>
                 </Row>
@@ -106,43 +123,62 @@ export default function Home(props) {
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/product.jpg"
-                            pathBack="/myMono.jpg"
+                            pathBack="/product.jpg"
                             tittle="Харчова допомога"
                             textContent="Допомагаємо продуктами
                                         харчування ВПО та СЖО"
+                            rotate={false}
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/clothes.jpg"
-                            pathBack="/myMono.jpg"
+                            pathBack="/clothes.jpg"
                             tittle="Одяг та предмети побуту"
                             textContent="Забеспечуємо одягом, взуттям, посудом та іншими предметами першої необхідності"
+                            rotate={false}
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/child.jpg"
-                            pathBack="/myMono.jpg"
+                            pathBack="/child.jpg"
                             tittle="Дитячі товари та харчування"
                             textContent="Забеспечення найменших громадян предметами дитячої гігієни,
                                      одягом, дитячими візочками та харчуванням. Співпрацюємо з
                                     дитячими будинками"
+                            rotate={false}
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={12}>
                         <CardHelp
                             pathFront="/lawer.jpg"
-                            pathBack="/myMono.jpg"
+                            pathBack="/lawer.jpg"
                             tittle="Юридична допомога"
                             textContent="Надання безкоштовної юр.
                                     допомоги, консультація з приводу майна, відновлення втраченних документів,
                                     оформлення юр.послуг"
+                            rotate={false}
                         />
                     </Col>
-{/*---------------------------------------------------------------------------------------------------------------------*/}
                 </Row>
-                <Row className="text-center justify-content-center mt-4 ">
+{/*---------------------------------------------------------------------------------------------------------------------*/}
+
+                <div className="pb-5">
+                    <h3 className="text-center my-5">Наші партнери</h3>
+                    <Marquee
+                        /*direction="right"*/
+                        gradientWidth={isMobile?100:200}
+                        speed={100}
+                    >
+                        <Image src={"/fond/partner/zarog.png"} height={55} width={222} />
+                        <Image src={"/fond/partner/kernel-logo.png"} height={55} width={222} />
+                        <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
+
+                    </Marquee>
+                </div>
+
+                {/*<Row className="text-center justify-content-center mt-4 ">
                     <h3>Збір коштів на потреби ЗСУ</h3>
                     <h5>До нас щодня звертаються війскові частини з проханням допомгти їм з придбанням необхідних речей,
                         тактичного обладнання, авто тощо...
@@ -152,14 +188,14 @@ export default function Home(props) {
 
                         <PayForm/>
 
-                        <Link href="/news">
+                         <Link href="/news">
                         <Button variant="outline-dark mt-5 mb-5 btn-block" size="lg" style={{height: "100px"}}>
                             Збір речей для бійців на "Нулі"
                         </Button>
                         </Link>
 
                     </Row>
-                </Row>
+                </Row>*/}
 
             </LayoutMain>
 

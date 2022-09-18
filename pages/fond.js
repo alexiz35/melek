@@ -41,10 +41,10 @@ export default function Fond() {
                          />
 
                      </div>
-                     <div className="pb-5">
+                     {/*<div className="pb-5">
                          <h3 className="text-center my-5">Наші партнери</h3>
                          <Marquee
-                             /*direction="right"*/
+                             direction="right"
                              gradientWidth={isMobile?100:200}
                              speed={100}
                          >
@@ -53,7 +53,7 @@ export default function Fond() {
                              <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
 
                          </Marquee>
-                     </div>
+                     </div>*/}
 
 
              </LayoutMain>
