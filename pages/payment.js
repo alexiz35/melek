@@ -10,7 +10,7 @@ import Table from "react-bootstrap/Table";
 import {useMediaQuery} from "react-responsive";
 
 
-export default function payment() {
+export default function Payment() {
     const isMobile = useMediaQuery({query: "(max-width: 576px)"})
     const [mono, setMono] = useState(<h6>Щось пішло не так</h6>)
 
