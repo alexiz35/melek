@@ -19,7 +19,8 @@ function MyApp({Component, pageProps}) {
         <>
             <Head>
                 <title>Melek</title>
-                <meta name="keywords" content="text, keywords,rere"/>
+                <meta name="google-site-verification" content="s4tupUGoWhTamUWR1DS2boQINNrD-dzghB12ZS1KVE8" />
+                <meta name="keywords" content="допомога, ЗСУ, фонд допомоги, збір коштів"/>
                 <meta name="description" content="this is my first site on react-next"/>
                 <meta charSet="utf-8"/>
             </Head>

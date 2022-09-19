@@ -24,8 +24,8 @@ export default function LayoutMain({children}) {
                     gradientColor={[250,250,25]}
                     gradientWidth={isMobile?100:300}
                     className={styles.runString}>
-                    {warString.day}-й день війни росії проти України, наразі вже знищено {warString.person} російских
-                    загарбників
+                    <span className="mx-3">{warString.day}-й день війни росії проти України, наразі вже знищено {warString.person} російских
+                        загарбників.</span>
                 </Marquee>
 
                 <MyNavbar/>

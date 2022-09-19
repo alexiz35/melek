@@ -43,7 +43,7 @@ export default function MyNavbar() {
                                 <Link href="/docPage"><a className="nav-link"> Документи</a></Link>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Link href="/news"><a className="nav-link">Потреби ЗСУ</a></Link>
+                        <Link href="/needs"><a className="nav-link">Потреби ЗСУ</a></Link>
                         <Nav>
                             <Link href="/payment">
                                 <Button variant="primary">

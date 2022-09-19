@@ -9,7 +9,15 @@ function CardHelp(props) {
     const router = useRouter()
 
     const handleClick = ()=> {
-        if (!props.rotate) router.push("https://send.monobank.ua/jar/8ZKWUg3jyC");
+        if (props.rotate) return 0;
+        switch (props.activeKey) {
+            case "medicine"  : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
+            case "ammunition": router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
+            case "optic"     : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
+            case "car"       : router.push("https://send.monobank.ua/jar/5qRWqWNqgH");break;
+            case "product"   : router.push("https://send.monobank.ua/jar/8Ckdp87Rvz");break;
+            default: break;
+        }
     }
 
     return (

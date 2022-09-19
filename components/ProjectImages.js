@@ -356,18 +356,18 @@ export const productImages = [
 export const fondImages = [
     {   src: "/project/large/auto/1.jpg",
         thumbnail: "/project/small/auto/1.jpg",
-        thumbnailWidth: 151,
-        thumbnailHeight: 200,
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
         caption: "first image"},
     {   src: "/project/large/auto/2.jpg",
         thumbnail: "/project/small/auto/2.jpg",
-        thumbnailWidth: 151,
-        thumbnailHeight: 200,
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
         caption: "first image"},
     {   src: "/project/large/auto/3.jpg",
         thumbnail: "/project/small/auto/3.jpg",
-        thumbnailWidth: 267,
-        thumbnailHeight: 200,
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
         caption: "first image"},
     {   src: "/project/large/auto/4.jpg",
         thumbnail: "/project/small/auto/4.jpg",
