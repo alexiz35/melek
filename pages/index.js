@@ -18,17 +18,17 @@ import {useMediaQuery} from "react-responsive";
 export default function Home(props) {
 
     const warData = {day: props.warData.data.day, person: props.warData.data.stats.personnel_units}
-    const [warString,setWarString] = useContext(AppContext)
+    const [warString, setWarString] = useContext(AppContext)
     const isMobile = useMediaQuery({query: "(max-width: 576px)"})
 
 
-    const loadData = useCallback(()=>{
+    const loadData = useCallback(() => {
         setWarString(warData)
-    },[])
+    }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         loadData()
-    },[])
+    }, [])
 
     return (
         <>
@@ -45,26 +45,27 @@ export default function Home(props) {
                 <Row className="text-center justify-content-center mt-4">
                     <h1>Головна наша місія - Допомога тим, хто найбільше цього потребує</h1>
 
-                    <h4 className="text-center" style={{maxWidth:"1100px"}}>Наш Фонд був заснований у 2018 році, кожного дня наша команда волонтерів працює задля
+                    <h4 className="text-center" style={{maxWidth: "1100px"}}>Наш Фонд був заснований у 2018 році,
+                        кожного дня наша команда волонтерів працює задля
                         досягнення спільної мети. Разом з нашими партнерами та благодійниками ми реалізуємо дуже важливі
                         проекти
                     </h4>
                     <h2 className="mt-5 mb-4">Чим ми займаємось</h2>
                     <h3 className="text-decoration-underline mb-4">Допомога ЗСУ</h3>
                 </Row>
-{/*-----------------------------------------------Cards help for AFU---------------------------------------------------*/}
+                {/*-----------------------------------------------Cards help for AFU---------------------------------------------------*/}
                 <Row className="justify-content-center">
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <Link href={"/news"}>
-                        <CardHelp
-                            pathFront="/javel.jpg"
-                            pathBack="/myMono.jpg"
-                            activeKey="medicine"
-                            tittle="Польова війскова медицина"
-                            textContent="Збираємо індивідуальні війскові аптечки(для першої допомоги)
+                            <CardHelp
+                                pathFront="/javel.jpg"
+                                pathBack="/myMono.jpg"
+                                activeKey="medicine"
+                                tittle="Польова війскова медицина"
+                                textContent="Збираємо індивідуальні війскові аптечки(для першої допомоги)
                                             та набори для польових медиків/санчасті"
-                            rotate={!isMobile}
-                        />
+                                rotate={!isMobile}
+                            />
                         </Link>
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -117,7 +118,7 @@ export default function Home(props) {
                         />
                     </Col>
                 </Row>
-{/*-----------------------------------------------Cards help for people------------------------------------------------*/}
+                {/*-----------------------------------------------Cards help for people------------------------------------------------*/}
                 <Row>
                     <h3 className="text-decoration-underline text-center mb-4 mt-5">Допомога ВПО та СЖО</h3>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -162,18 +163,21 @@ export default function Home(props) {
                         />
                     </Col>
                 </Row>
-{/*---------------------------------------------------------------------------------------------------------------------*/}
+                {/*---------------------------------------------------------------------------------------------------------------------*/}
 
                 <div className="pb-5">
                     <h3 className="text-center my-5">Наші партнери</h3>
                     <Marquee
                         /*direction="right"*/
-                        gradientWidth={isMobile?100:200}
+                        gradientWidth={isMobile ? 100 : 200}
                         speed={100}
                     >
-                        <Image src={"/fond/partner/zarog.png"} height={55} width={222} />
-                        <Image src={"/fond/partner/kernel-logo.png"} height={55} width={222} />
-                        <Image src={"/fond/partner/breadLubny.png"} height={55} width={222} />
+                        <img style={{marginRight: "50px"}} src={"/fond/partner/zarog.jpg"} height={55} width={222}
+                             alt={"молокозавод Зарог"}/>
+                        <img style={{marginRight: "50px"}} src={"/fond/partner/kernel-logo.png"} height={55} width={222}
+                             alt={"кернел"}/>
+                        <img style={{paddingRight: "0px"}} src={"/fond/partner/bread.jpg"} height={55} width={222}
+                             alt={"хлібозавод лубенський"}/>
 
                     </Marquee>
                 </div>

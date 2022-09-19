@@ -5,8 +5,9 @@ import LayoutMain from "../components/LayoutMain";
 import Container from "react-bootstrap/Container";
 import styles from "../styles/Projects.module.css";
 import Gallery from "react-grid-gallery";
-import {medicImages, ammunImages, opticImages, autoImages, productImages} from "../components/ProjectImages";
+import {medicImages, ammunImages, opticImages, autoImages, productImages,fondImages} from "../components/ProjectImages";
 import {useRouter} from "next/router";
+import fond from "./fond";
 
 
 export default function Projects(props) {
@@ -125,6 +126,26 @@ export default function Projects(props) {
                                 </div>
                             </Accordion.Body>
                         </Accordion.Item>
+                        <Accordion.Item eventKey="fond">
+                            <Accordion.Header>Життя Фонду Melek</Accordion.Header>
+                            <Accordion.Body>
+                                <div style={{
+                                    display: "block",
+                                    minHeight: "1px",
+                                    width: "100%",
+                                    border: "1px solid #ddd",
+                                    overflow: "auto"
+                                }}>
+                                    <Gallery
+                                        images={fondImages}
+                                        enableLightbox={true}
+                                        enableImageSelection={false}
+                                        backdropClosesModal={true}
+                                    />
+
+                                </div>
+                            </Accordion.Body>
+                        </Accordion.Item>
                     </Accordion>
                     <h2><a href="https://www.facebook.com/groups/779859472357564">Детальніше на Facebook</a></h2>
                 </Container>
@@ -134,8 +155,13 @@ export default function Projects(props) {
     )
 }
 
+
+Projects.defaultProps = {
+    activeKey: "fond",
+}
+
 Projects.getInitialProps = ({query}) => {
-    return {
-        activeKey: query.activeKey
-    }
+        return {
+            activeKey: query.activeKey
+        }
 }

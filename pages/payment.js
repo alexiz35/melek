@@ -13,6 +13,7 @@ import {useMediaQuery} from "react-responsive";
 export default function Payment() {
     const isMobile = useMediaQuery({query: "(max-width: 576px)"})
     const [mono, setMono] = useState(<h6>Щось пішло не так</h6>)
+    const [anybank, setAnybank] = useState(<h6>Щось пішло не так</h6>)
 
     useEffect(() => {
         isMobile ?
@@ -21,6 +22,22 @@ export default function Payment() {
             </a>)
             :
             setMono(<Image src={"/myMono.jpg"} width={300} height={400}/>)
+    }, [isMobile])
+
+    useEffect(() => {
+        !isMobile ?
+            setAnybank(
+                <a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
+                <Image src={"/monoPay.png"} width={300} height={400}/>
+                </a>
+            )
+            :
+            setAnybank(
+                <>
+                <h3>Номер картки</h3>
+                <h3>4441114420222661</h3>
+                </>
+            )
     }, [isMobile])
 
     return (
@@ -56,9 +73,10 @@ export default function Payment() {
                             </Col>
                             <Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3">
                                 <h6 className="mt-2 mb-3">Для власників карток інших банків</h6>
-                                <a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
+                                {anybank}
+                                {/*<a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
                                     <Image src={"/monoPay.png"} width={300} height={400}/>
-                                </a>
+                                </a>*/}
                                 {/*<PayForm/>*/}
                             </Col>
 
@@ -72,6 +90,7 @@ export default function Payment() {
                                 звертайтеся, будь ласка, за телефоном:
                             </h5>
                             <div className="text-center py-3 mt-3 mb-3 border border-dark rounded-3" style={{maxWidth:"300px"}}>
+                                <h5>Голова фонду </h5>
                                 <h4>Ірина Подфедько </h4>
                                 <h4> +380954608102 </h4>
                                 {/*<h4>Виталий Ника </h4>
@@ -80,7 +99,7 @@ export default function Payment() {
                         </Row>
                         <Row className="mt-4 mb-4">
                             <h3>Також можно переказати кошти на рахунок Фонду</h3>
-                            <h5>Реквізити Фонду Melek</h5>
+                            <h5 className="mt-4 mb-4">Реквізити Фонду Melek у гривні</h5>
                             <Table responsive striped bordered hover size={"sm"}>
                                 <thead>
                                 <tr>
@@ -111,6 +130,8 @@ export default function Payment() {
                                 </tr>
                                 </tbody>
                             </Table>
+                            <h5 className="mt-5">Реквізити Фонду Melek у доларах</h5>
+                            <a href="/dolInvoice.jpg" download>Завантажити реквізити для переказу</a>
                         </Row>
                     </Row>
 
