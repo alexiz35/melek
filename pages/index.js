@@ -39,10 +39,15 @@ export default function Home(props) {
     return (
         <>
             <Head>
+
                 <title>Благодійний фонд Melek</title>
                 <meta name="description" content="Фонд Melek допомогає війсковим та цивільним"/>
                 <link rel="icon" href="/favicon.ico"/>
+
             </Head>
+
+
+
             <LayoutMain props={warString}>
 
                 <Row>

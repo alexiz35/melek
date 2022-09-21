@@ -9,7 +9,7 @@ export const docImages = [
         thumbnailWidth: 285,
         thumbnailHeight: 400,
         caption: "first image"},
-    {   src: "/documents/large/statut1.jpg",
+    /*{   src: "/documents/large/statut1.jpg",
         thumbnail: "/documents/small/statut1.jpg",
         thumbnailWidth: 180,
         thumbnailHeight: 400,
