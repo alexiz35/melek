@@ -354,30 +354,220 @@ export const productImages = [
 ]
 
 export const fondImages = [
-    {   src: "/project/large/auto/1.jpg",
-        thumbnail: "/project/small/auto/1.jpg",
+    {   src: "/project/large/fond/1.jpg",
+        thumbnail: "/project/small/fond/1.jpg",
         /*thumbnailWidth: 151,
         thumbnailHeight: 200,*/
         caption: "first image"},
-    {   src: "/project/large/auto/2.jpg",
-        thumbnail: "/project/small/auto/2.jpg",
+    {   src: "/project/large/fond/2.jpg",
+        thumbnail: "/project/small/fond/2.jpg",
         /*thumbnailWidth: 151,
         thumbnailHeight: 200,*/
         caption: "first image"},
-    {   src: "/project/large/auto/3.jpg",
-        thumbnail: "/project/small/auto/3.jpg",
+    {   src: "/project/large/fond/3.jpg",
+        thumbnail: "/project/small/fond/3.jpg",
         /*thumbnailWidth: 267,
         thumbnailHeight: 200,*/
         caption: "first image"},
-    {   src: "/project/large/auto/4.jpg",
-        thumbnail: "/project/small/auto/4.jpg",
-        thumbnailWidth: 267,
-        thumbnailHeight: 200,
+    {   src: "/project/large/fond/4.jpg",
+        thumbnail: "/project/small/fond/4.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
         caption: "first image"},
-    {   src: "/project/large/auto/5.jpg",
-        thumbnail: "/project/small/auto/5.jpg",
-        thumbnailWidth: 433,
-        thumbnailHeight: 200,
+    {   src: "/project/large/fond/5.jpg",
+        thumbnail: "/project/small/fond/5.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/6.jpg",
+        thumbnail: "/project/small/fond/6.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/7.jpg",
+        thumbnail: "/project/small/fond/7.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/8.jpg",
+        thumbnail: "/project/small/fond/8.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/9.jpg",
+        thumbnail: "/project/small/fond/9.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/10.jpg",
+        thumbnail: "/project/small/fond/10.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/11.jpg",
+        thumbnail: "/project/small/fond/11.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/12.jpg",
+        thumbnail: "/project/small/fond/12.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/13.jpg",
+        thumbnail: "/project/small/fond/13.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/14.jpg",
+        thumbnail: "/project/small/fond/14.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/15.jpg",
+        thumbnail: "/project/small/fond/15.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/16.jpg",
+        thumbnail: "/project/small/fond/16.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/17.jpg",
+        thumbnail: "/project/small/fond/17.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/18.jpg",
+        thumbnail: "/project/small/fond/18.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/19.jpg",
+        thumbnail: "/project/small/fond/19.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/20.jpg",
+        thumbnail: "/project/small/fond/20.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/21.jpg",
+        thumbnail: "/project/small/fond/21.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/22.jpg",
+        thumbnail: "/project/small/fond/22.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/23.jpg",
+        thumbnail: "/project/small/fond/23.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/24.jpg",
+        thumbnail: "/project/small/fond/24.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/25.jpg",
+        thumbnail: "/project/small/fond/25.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/26.jpg",
+        thumbnail: "/project/small/fond/26.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/27.jpg",
+        thumbnail: "/project/small/fond/27.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/28.jpg",
+        thumbnail: "/project/small/fond/28.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/29.jpg",
+        thumbnail: "/project/small/fond/29.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/30.jpg",
+        thumbnail: "/project/small/fond/30.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/31.jpg",
+        thumbnail: "/project/small/fond/31.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/32.jpg",
+        thumbnail: "/project/small/fond/32.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/33.jpg",
+        thumbnail: "/project/small/fond/33.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/34.jpg",
+        thumbnail: "/project/small/fond/34.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/35.jpg",
+        thumbnail: "/project/small/fond/35.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/36.jpg",
+        thumbnail: "/project/small/fond/36.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/37.jpg",
+        thumbnail: "/project/small/fond/37.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/38.jpg",
+        thumbnail: "/project/small/fond/38.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/39.jpg",
+        thumbnail: "/project/small/fond/39.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/40.jpg",
+        thumbnail: "/project/small/fond/40.jpg",
+        /*thumbnailWidth: 433,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/41.jpg",
+        thumbnail: "/project/small/fond/41.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/42.jpg",
+        thumbnail: "/project/small/fond/42.jpg",
+        /*thumbnailWidth: 151,
+        thumbnailHeight: 200,*/
+        caption: "first image"},
+    {   src: "/project/large/fond/43.jpg",
+        thumbnail: "/project/small/fond/43.jpg",
+        /*thumbnailWidth: 267,
+        thumbnailHeight: 200,*/
         caption: "first image"},
 
 ]
