@@ -3,7 +3,6 @@ import Head from "next/head";
 import Accordion from "react-bootstrap/Accordion"
 import LayoutMain from "../components/LayoutMain";
 import Container from "react-bootstrap/Container";
-import styles from "../styles/Projects.module.css";
 import Gallery from "react-grid-gallery";
 import {
     medicImages,
@@ -13,7 +12,6 @@ import {
     productImages,
     fondImages
 } from "../components/ProjectImages";
-import {useRouter} from "next/router";
 import fond from "./fond";
 import Row from "react-bootstrap/Row";
 import PayCard from "../components/PayCard";
@@ -21,15 +19,12 @@ import PayCard from "../components/PayCard";
 
 export default function Projects(props) {
 
-    const router = useRouter()
-
 
     return (
         <>
             <Head>
                 <title>Відкриті проекти фонду Melek</title>
                 <meta name="description" content="відправляємо амуницію, продукти, ремонтуємо авто"/>
-                <link rel="icon" href="/favicon.ico"/>
             </Head>
             <LayoutMain>
                 <Container>

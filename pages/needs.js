@@ -12,7 +12,7 @@ export default function Needs() {
             <Head>
                 <title>Потреби ЗСУ</title>
                 <meta name="description" content="Фонд Melek допомогає війсковим"/>
-                <link rel="icon" href="/favicon.ico"/>
+
             </Head>
             <LayoutMain>
 
@@ -21,7 +21,7 @@ export default function Needs() {
                     <h1 className=" mt-4 mb-5">Потреби ЗСУ</h1>
                     <Row>
                         <Col xs={12} md={6}>
-                            <Image src="/potreby.jpg" height={1080} width={1080} layout="responsive"/>
+                            <Image src="/potreby.jpg" height={1080} width={1080} layout="responsive" alt="потреби зсу"/>
                         </Col>
                         <Col xs={12} md={6}>
                             <h2>Наші війскові постійно потребують:</h2>
@@ -68,7 +68,9 @@ export default function Needs() {
                         <div className="text-center py-3 mt-3 mb-3 border border-dark rounded-3"
                              style={{maxWidth: "300px"}}>
                             <h4>Ірина Подфедько </h4>
-                            <h4> +380954608102 </h4>
+                            <a style={{textDecoration:"none",color:"black"}} href="tel:+380954608102">
+                                <h4> +380954608102 </h4>
+                            </a>
                             {/*<h4>Виталий Ника </h4>
                                 <h4> 0980050523 </h4>*/}
                         </div>

@@ -16,6 +16,7 @@ export default function LayoutMain({children}) {
 
     return (
         <>
+
             <header className={styles.header}>
 
                 <Marquee

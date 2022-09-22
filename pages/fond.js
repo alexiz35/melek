@@ -1,11 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import LayoutMain from "../components/LayoutMain";
-import Container from "react-bootstrap/Container";
 import Gallery from "react-grid-gallery";
 import {fondImages} from "../components/FondImages";
-import Marquee from "react-fast-marquee/dist";
-import Image from "next/image";
 import {useMediaQuery} from "react-responsive";
 
 export default function Fond() {
@@ -15,7 +12,6 @@ export default function Fond() {
             <Head>
                 <title>Благодійний фонд Melek</title>
                 <meta name="description" content="Фонд Melek - історія, місія та відзнаки"/>
-                <link rel="icon" href="/favicon.ico"/>
             </Head>
             <LayoutMain>
 

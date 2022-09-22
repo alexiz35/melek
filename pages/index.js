@@ -1,14 +1,10 @@
 import Head from 'next/head'
 import React, {useCallback, useContext, useEffect, useState} from "react";
-import Container from "react-bootstrap/Container";
 import LayoutMain from "../components/LayoutMain";
-import PayForm from "../components/PayForm";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "next/image"
 import CarouselFade from "../components/CarouselFade";
 import CardHelp from "../components/CardHelp";
-import Button from "react-bootstrap/Button";
 import AppContext from "../context/AppContext";
 import Link from "next/link";
 import Marquee from "react-fast-marquee/dist";
@@ -42,7 +38,6 @@ export default function Home(props) {
 
                 <title>Благодійний фонд Melek</title>
                 <meta name="description" content="Фонд Melek допомогає війсковим та цивільним"/>
-                <link rel="icon" href="/favicon.ico"/>
 
             </Head>
 
@@ -60,7 +55,7 @@ export default function Home(props) {
 
                     <h4 className="text-center" style={{maxWidth: "1100px"}}>Наш Фонд був заснований у 2018 році,
                         кожного дня наша команда волонтерів працює задля досягнення спільної мети.
-                        Разом з нашими партнерами та благодійниками ми реалізовуємо дуже важливі проекти
+                        Разом з нашими партнерами та благодійниками ми реалізовуємо дуже важливі проекти.
                     </h4>
                     <h2 className="mt-5 mb-4">Чим ми займаємось</h2>
                     <h3 className="text-decoration-underline mb-4">Допомога ЗСУ</h3>

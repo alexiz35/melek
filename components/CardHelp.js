@@ -26,8 +26,10 @@ function CardHelp(props) {
             <div className={styles.wrapCard}>
                 <div className={(props.rotate) ? styles.card : styles.cardStop}>
 
-                    <Card.Img variant="top" src={props.pathFront} className={styles.front} onClick={handleClick}/>
-                    <Card.Img variant="top" src={props.pathBack} className={styles.back}/>
+                    <Card.Img variant="top" src={props.pathFront} className={styles.front} onClick={handleClick}
+                              alt="збір коштів на допомогу ЗСУ"/>
+                    <Card.Img variant="top" src={props.pathBack} className={styles.back}
+                                alt="донати на ЗСУ"/>
                 </div>
             </div>
             <Card.Body>

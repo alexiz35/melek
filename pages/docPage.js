@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import LayoutMain from "../components/LayoutMain";
 import Gallery from "react-grid-gallery";
-import {productImages} from "../components/ProjectImages";
 import {docImages} from "../components/DocImages";
 import {useMediaQuery} from "react-responsive";
 
@@ -13,7 +12,6 @@ export default function DocPage() {
         <Head>
             <title>Документи благодійного фонду Melek</title>
             <meta name="description" content="документи фонду благодійної допомоги Melek"/>
-            <link rel="icon" href="/favicon.ico"/>
         </Head>
         <LayoutMain>
 

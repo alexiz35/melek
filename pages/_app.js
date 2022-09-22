@@ -21,8 +21,9 @@ function MyApp({Component, pageProps}) {
                 <title>Melek</title>
                 <meta name="google-site-verification" content="s4tupUGoWhTamUWR1DS2boQINNrD-dzghB12ZS1KVE8" />
                 <meta name="keywords" content="допомога, ЗСУ, фонд допомоги, збір коштів"/>
-                <meta name="description" content="this is my first site on react-next"/>
+                <meta name="description" content="допомогти зсу головна місія благодійного фонду Melek"/>
                 <meta charSet="utf-8"/>
+                <link rel="icon" href="/ico.png"/>
             </Head>
             <AppContext.Provider value={contextValue}>
                 <SSRProvider>

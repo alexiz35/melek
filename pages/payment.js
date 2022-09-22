@@ -5,7 +5,6 @@ import LayoutMain from "../components/LayoutMain";
 import Row from "react-bootstrap/Row";
 import Image from "next/image";
 import Col from "react-bootstrap/Col";
-import PayForm from "../components/PayForm";
 import Table from "react-bootstrap/Table";
 import {useMediaQuery} from "react-responsive";
 
@@ -18,17 +17,17 @@ export default function Payment() {
     useEffect(() => {
         isMobile ?
             setMono(<a href={"https://send.monobank.ua/jar/2aYBaMCcHr"}>
-                <Image src={"/monoPay.png"} width={300} height={400}/>
+                <Image src={"/monoPay.png"} width={300} height={400} alt="долучитись до допомоги ЗСУ разом з Melek"/>
             </a>)
             :
-            setMono(<Image src={"/mono/qr_afu.jpg"} width={300} height={339}/>)
+            setMono(<Image src={"/mono/qr_afu.jpg"} width={300} height={339} alt="допомога ЗСУ"/>)
     }, [isMobile])
 
     useEffect(() => {
         !isMobile ?
             setAnybank(
                 <a href={"https://send.monobank.ua/jar/2aYBaMCcHr"}>
-                <Image src={"/monoPay.png"} width={300} height={400}/>
+                <Image src={"/monoPay.png"} width={300} height={400} alt="донати на зсу"/>
                 </a>
             )
             :
@@ -45,7 +44,6 @@ export default function Payment() {
             <Head>
                 <title>Збір коштів для ЗСУ</title>
                 <meta name="description" content="Збираємо кошти на допомогу ЗСУ та постраждалим від війни"/>
-                <link rel="icon" href="/favicon.ico"/>
             </Head>
             <LayoutMain>
                 <Container>
@@ -56,7 +54,7 @@ export default function Payment() {
                     </Row>
                     <Row className="text-center mt-2">
                         <h1>Дякуємо за підтримку!</h1>
-                        <h5>У звʼязку з війною в Україні Міжнародний Фонд «Melek» закликає кожного
+                        <h5>У звʼязку з війною в Україні Благодійний Фонд «Melek» закликає кожного
                             українця на своєму рівні робити все можливе, що залежить від вас у даний час. Лише так ми
                             зможемо наблизились до спільної мети — перемоги над ворогом та відновлення територіальної
                             цілісності нашої держави!</h5>
@@ -92,7 +90,9 @@ export default function Payment() {
                             <div className="text-center py-3 mt-3 mb-3 border border-dark rounded-3" style={{maxWidth:"300px"}}>
                                 <h5>Голова фонду </h5>
                                 <h4>Ірина Подфедько </h4>
+                                <a style={{textDecoration:"none",color:"black"}} href="tel:+380954608102">
                                 <h4> +380954608102 </h4>
+                                </a>
                                 {/*<h4>Виталий Ника </h4>
                                 <h4> 0980050523 </h4>*/}
                             </div>

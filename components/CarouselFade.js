@@ -3,9 +3,6 @@ import React from "react";
 
 function CarouselFade(props) {
 
-
-
-
     return (
 
         <Carousel fade>
