@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import React, {useCallback, useContext, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import LayoutMain from "../components/LayoutMain";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CarouselFade from "../components/CarouselFade";
 import CardHelp from "../components/CardHelp";
-import AppContext from "../context/AppContext";
 import Link from "next/link";
 import Marquee from "react-fast-marquee/dist";
 import {useMediaQuery} from "react-responsive";
@@ -13,20 +12,20 @@ import {useMediaQuery} from "react-responsive";
 
 export default function Home(props) {
 
-    const warData = {day: props.warData.data.day, person: props.warData.data.stats.personnel_units}
-    const [warString, setWarString] = useContext(AppContext)
+    /*const warData = {day: props.warData.data.day, person: props.warData.data.stats.personnel_units}*/
+    /*const [warString, setWarString] = useContext(AppContext)*/
     const isMobile = useMediaQuery({query: "(max-width: 576px)"})
     const isSizeText = useMediaQuery({query: "(max-width: 768px)"})
     const [sizefont,setSizeFont]=useState(true)
 
 
-    const loadData = useCallback(() => {
+    /*const loadData = useCallback(() => {
         setWarString(warData)
     }, [])
 
     useEffect(() => {
         loadData()
-    }, [])
+    }, [])*/
 
     useEffect(()=>{
         setSizeFont(isSizeText)
@@ -43,7 +42,7 @@ export default function Home(props) {
 
 
 
-            <LayoutMain props={warString}>
+            <LayoutMain>
 
                 <Row>
                     <CarouselFade
@@ -219,11 +218,11 @@ export default function Home(props) {
     )
 }
 
-export async function getServerSideProps() {
+/*export async function getServerSideProps() {
     const res = await fetch("https://russianwarship.rip/api/v1/statistics/latest")
     const warData = await res.json()
 
     return {
         props: {warData}
     }
-}
+}*/

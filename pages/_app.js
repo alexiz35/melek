@@ -1,19 +1,18 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, {useMemo, useState} from "react";
+import React from "react";
 import Head from "next/head";
 import SSRProvider from 'react-bootstrap/SSRProvider';
-import AppContext from "../context/AppContext";
 
 
 function MyApp({Component, pageProps}) {
-    const [warString, setWarString] = useState({
+   /* const [warString, setWarString] = useState({
         day: "150",
         person: "40000"
     })
     const contextValue = useMemo(()=>{
         return [warString,setWarString]
-    },[warString,setWarString])
+    },[warString,setWarString])*/
 
     return (
         <>
@@ -25,11 +24,11 @@ function MyApp({Component, pageProps}) {
                 <meta charSet="utf-8"/>
                 <link rel="icon" href="/ico.png"/>
             </Head>
-            <AppContext.Provider value={contextValue}>
+
                 <SSRProvider>
                     <Component {...pageProps} />
                 </SSRProvider>
-            </AppContext.Provider>
+
         </>
     )
 }
