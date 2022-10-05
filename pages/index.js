@@ -102,7 +102,7 @@ export default function Home(props) {
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/javel.jpg"
-                            pathBack="/mono/qr_auto.jpg"
+                            pathBack="/mono/qr_afu.jpg"
                             activeKey="car"
                             tittle="Транспорт"
                             textContent="Пошук, закупівля, ремонт,
@@ -114,7 +114,7 @@ export default function Home(props) {
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/javel.jpg"
-                            pathBack="/mono/qr_product.jpg"
+                            pathBack="/mono/qr_afu.jpg"
                             activeKey="product"
                             tittle="Харчування"
                             textContent="Виготовлення субліматів, тушонки, консервів, кондитерських виробів. Постачання

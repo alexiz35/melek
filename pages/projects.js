@@ -157,19 +157,19 @@ export default function Projects(props) {
                     <Row className="text-center justify-content-center mt-4">
                         <h3 >Допомогти легко</h3>
                         <h4>Скануйте QR-код або тиснить на нього</h4>
-                        <Row className="mt-4 mb-5 justify-content-md-between justify-content-center gap-4">
+                        <Row className="mt-4 mb-5 justify-content-center gap-4">
                         <PayCard
                             url={"/mono/qr_afu.jpg"}
                             id ={"afu"}
                         />
-                        <PayCard
+                        {/*<PayCard
                             url={"/mono/qr_auto.jpg"}
                             id ={"auto"}
                         />
                         <PayCard
                             url={"/mono/qr_product.jpg"}
                             id ={"product"}
-                        />
+                        />*/}
                         </Row>
                     </Row>
                 </Container>
