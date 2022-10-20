@@ -32,15 +32,18 @@ export default function MyNavbar() {
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
                     <Nav>
                         <Link href="/"><a className="nav-link">Головна</a></Link>
+
+                        <Link href="/needs"><a className="nav-link">Потреби ЗСУ</a></Link>
+
                         <NavDropdown title="Про Фонд" id="collasible-nav-dropdown">
                             <NavDropdown.Item>
                                 <Nav>
-                                <Link href="/fond"><a className="nav-link">Про фонд</a></Link>
+                                    <Link href="/fond"><a className="nav-link">Про фонд</a></Link>
                                 </Nav>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <Nav>
-                                <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>
+                                    <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>
                                 </Nav>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
@@ -49,11 +52,11 @@ export default function MyNavbar() {
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>
                                 <Nav>
-                                <Link href="/docPage"><a className="nav-link"> Документи</a></Link>
+                                    <Link href="/docPage"><a className="nav-link"> Документи</a></Link>
                                 </Nav>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Link href="/needs"><a className="nav-link">Потреби ЗСУ</a></Link>
+
                         <Nav>
                             <Link href="/payment">
                                 <Button variant="primary">
