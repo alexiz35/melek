@@ -14,8 +14,8 @@ function CardHelp(props) {
             case "medicine"  : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
             case "ammunition": router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
             case "optic"     : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
-            case "car"       : router.push("https://send.monobank.ua/jar/5qRWqWNqgH");break;
-            case "product"   : router.push("https://send.monobank.ua/jar/8Ckdp87Rvz");break;
+            case "car"       : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
+            case "product"   : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
             default: break;
         }
     }
