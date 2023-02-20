@@ -43,7 +43,7 @@ export default function MyNavbar() {
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <Nav>
-                                    <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>
+                                    <Link href="/projects"><a className="nav-link">Наші проєкти</a></Link>
                                 </Nav>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
