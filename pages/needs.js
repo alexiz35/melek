@@ -78,7 +78,7 @@ export default function Needs() {
                         <div className="text-center py-3 mt-3 mb-3 border border-dark rounded-3"
                              style={{maxWidth: "300px"}}>
                             <h4>м.Лубни, </h4>
-                            <h4> пр-т Володимірский,12 </h4>
+                            <h4> пр-т Володимирский,12 </h4>
                             {/*<h4>Виталий Ника </h4>
                                 <h4> 0980050523 </h4>*/}
                         </div>

@@ -43,7 +43,7 @@ export default function MyNavbar() {
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <Nav>
-                                    <Link href="/projects"><a className="nav-link">Наші проекти</a></Link>
+                                    <Link href="/projects"><a className="nav-link">Наші проєкти</a></Link>
                                 </Nav>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
@@ -59,7 +59,7 @@ export default function MyNavbar() {
 
                         <Nav>
                             <Link href="/payment">
-                                <Button variant="primary">
+                                <Button variant="outline-dark" className={"mb-3 mt-3 mb-md-0 mt-md-0 "}>
                                     Допомогти
                                 </Button>
                             </Link>

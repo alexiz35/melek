@@ -8,6 +8,7 @@ import CardHelp from "../components/CardHelp";
 import Link from "next/link";
 import Marquee from "react-fast-marquee/dist";
 import {useMediaQuery} from "react-responsive";
+import {Nav} from "react-bootstrap";
 
 
 export default function Home(props) {
@@ -54,7 +55,8 @@ export default function Home(props) {
 
                     <h4 className="text-center" style={{maxWidth: "1100px"}}>Наш Фонд був заснований у 2018 році,
                         кожного дня наша команда волонтерів працює задля досягнення спільної мети.
-                        Разом з нашими партнерами та благодійниками ми реалізовуємо дуже важливі проекти.
+                        Разом із вами, з нашими партнерами та благодійниками ми реалізовуємо багато життєво важливих
+                        проєктів.
                     </h4>
                     <h2 className="mt-5 mb-4">Чим ми займаємось</h2>
                     <h3 className="text-decoration-underline mb-4">Допомога ЗСУ</h3>
@@ -70,7 +72,8 @@ export default function Home(props) {
                                 tittle="Польова війскова медицина"
                                 textContent="Збираємо індивідуальні війскові аптечки (для першої допомоги)
                                             та набори для польових медиків/санчасті"
-                                rotate={!isMobile}
+                                /*rotate={!isMobile}*/
+                                rotate={false}
                             />
                         </Link>
                     </Col>
@@ -83,8 +86,8 @@ export default function Home(props) {
                             textContent="Виготовляємо наколінники, розгрузки рпс, плитоноски, підсумок
                                   сбросу, підсумки під аптечку, під турнікет, стропа евакуації,
                                   кікімора (шугайстр)"
-                            rotate={!isMobile}
-
+                            /*rotate={!isMobile}*/
+                            rotate={false}
                         />
                     </Col>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
@@ -95,7 +98,8 @@ export default function Home(props) {
                             tittle="Оптика"
                             textContent="Закуповуємо прибори нічного бачення, біноклі, тепловізори, захисні окуляри,
                                    монокуляри"
-                            rotate={!isMobile}
+                            /*rotate={!isMobile}*/
+                            rotate={false}
 
                         />
                     </Col>
@@ -107,7 +111,8 @@ export default function Home(props) {
                             tittle="Транспорт"
                             textContent="Пошук, закупівля, ремонт,
                                         фарбування автівок для ЗСУ"
-                            rotate={!isMobile}
+                            /*rotate={!isMobile}*/
+                            rotate={false}
 
                         />
                     </Col>
@@ -119,14 +124,15 @@ export default function Home(props) {
                             tittle="Харчування"
                             textContent="Виготовлення субліматів, тушонки, консервів, кондитерських виробів. Постачання
                                     води, овочів, крупи, консервації"
-                            rotate={!isMobile}
+                            /*rotate={!isMobile}*/
+                            rotate={false}
 
                         />
                     </Col>
                 </Row>
                 {/*-----------------------------------------------Cards help for people------------------------------------------------*/}
                 <Row>
-                    <h3 className="text-decoration-underline text-center mb-4 mt-5">Допомога ВПО та СЖО</h3>
+                    <h3 className="text-decoration-underline text-center mb-4 mt-5">Допомога ВПО та людям, що опинилися у складних життєвих обставинах</h3>
                     <Col className="d-flex justify-content-center mb-4" xs={12} md={6} lg={4}>
                         <CardHelp
                             pathFront="/product.jpg"

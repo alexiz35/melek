@@ -26,15 +26,16 @@ export default function Payment() {
     useEffect(() => {
         !isMobile ?
             setAnybank(
-                <a href={"https://send.monobank.ua/jar/2aYBaMCcHr"}>
+                /*<a href={"https://send.monobank.ua/jar/2aYBaMCcHr"}>
                 <Image src={"/monoPay.png"} width={300} height={400} alt="донати на зсу"/>
-                </a>
+                </a>*/
+                <h3>5582592394550389</h3>
+
             )
             :
             setAnybank(
                 <>
-                <h3>Номер картки</h3>
-                <h3>4441114420222661</h3>
+                <h3>5582592394550389</h3>
                 </>
             )
     }, [isMobile])
@@ -65,12 +66,13 @@ export default function Payment() {
                         <Row className="text-center justify-content-around">
 
 
-                            <Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3">
-                                <h6 className="mt-3 mb-4">Для власників картки монобанку</h6>
+                            {/*<Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3">
+                                <h6 className="mt-3 mb-4">Номер картки</h6>
                                 {mono}
-                            </Col>
-                            <Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3">
-                                <h6 className="mt-3 mb-3">Для власників карток інших банків</h6>
+                            </Col>*/}
+                            <Col sx={12} md={5} className="text-center border border-dark rounded-3 mb-3 pb-3" >
+                                <h2 className="mt-3 mb-3">Номер картки</h2>
+                                <h5 className="mt-3 mb-3">Укрсіббанк</h5>
                                 {anybank}
                                 {/*<a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
                                     <Image src={"/monoPay.png"} width={300} height={400}/>

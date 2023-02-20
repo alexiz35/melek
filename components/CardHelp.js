@@ -11,13 +11,14 @@ function CardHelp(props) {
     const handleClick = ()=> {
         if (props.rotate) return 0;
         switch (props.activeKey) {
-            case "medicine"  : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
-            case "ammunition": router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
-            case "optic"     : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
-            case "car"       : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
-            case "product"   : router.push("https://send.monobank.ua/jar/2aYBaMCcHr");break;
+            case "medicine"  : router.push("/payment");break;
+            case "ammunition": router.push("/payment");break;
+            case "optic"     : router.push("/payment");break;
+            case "car"       : router.push("/payment");break;
+            case "product"   : router.push("/payment");break;
             default: break;
         }
+
     }
 
     return (

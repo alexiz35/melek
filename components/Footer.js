@@ -11,7 +11,7 @@ export default function Footer() {
                 <Row className="justify-content-around">
                     <Col xs={12} sm={4} className="mt-4 text-center">
                         <h6>Благодійний фонд "Melek"</h6>
-                        <h6>м.Лубни, пр-т Володимірский,12</h6>
+                        <h6>м.Лубни, пр-т Володимирский,12</h6>
                         <h6>т.+38(095)4608102</h6>
                     </Col>
                     <Col xs={12} sm={4} className="mt-4 text-center">
