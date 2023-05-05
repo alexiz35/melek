@@ -47,7 +47,7 @@ export default function MyNavbar() {
                                 </Nav>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link href="#action/3.3"><a className="nav-link">Звіти</a></Link>
+                                <Link href="/report"><a className="nav-link">Звіти</a></Link>
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>
