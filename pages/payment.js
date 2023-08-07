@@ -74,6 +74,8 @@ export default function Payment() {
                                 <h2 className="mt-3 mb-3">Номер картки</h2>
                                 <h5 className="mt-3 mb-3">Укрсіббанк</h5>
                                 {anybank}
+                                <h5 className="mt-3 mb-3">Монобанк</h5>
+                                <h3>4441111135798357</h3>
                                 {/*<a href={"https://send.monobank.ua/jar/8ZKWUg3jyC"}>
                                     <Image src={"/monoPay.png"} width={300} height={400}/>
                                 </a>*/}
