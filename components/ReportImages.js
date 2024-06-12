@@ -120,3 +120,61 @@ export const reportImages = [
         caption: "first image"},
 */
 ]
+
+export const reportImages110624 = [
+    {   src: "/fond/report/110624/large/1.jpg",
+        thumbnail: "/fond/report/110624/small/1.jpg",
+        thumbnailWidth: 556,
+        thumbnailHeight: 250,
+        caption: "Фото 1"},
+    {   src: "/fond/report/110624/large/2.jpg",
+        thumbnail: "/fond/report/110624/small/2.jpg",
+        thumbnailWidth: 556,
+        thumbnailHeight: 250,
+        caption: "Фото 2"},
+    {   src: "/fond/report/110624/large/3.jpg",
+        thumbnail: "/fond/report/110624/small/3.jpg",
+        thumbnailWidth: 556,
+        thumbnailHeight: 250,
+        caption: "Фото 3"},
+    {   src: "/fond/report/110624/large/4.jpg",
+        thumbnail: "/fond/report/110624/small/4.jpg",
+        thumbnailWidth: 556,
+        thumbnailHeight: 250,
+        caption: "Фото 4"}
+    ]
+export const reportImages070624 = [
+    {   src: "/fond/report/070624/large/1.jpg",
+        thumbnail: "/fond/report/070624/small/1.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 300,
+        caption: "Фото 1"},
+    {   src: "/fond/report/070624/large/2.jpg",
+        thumbnail: "/fond/report/070624/small/2.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 300,
+        caption: "Фото 2"},
+    {   src: "/fond/report/070624/large/3.jpg",
+        thumbnail: "/fond/report/070624/small/3.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 300,
+        caption: "Фото 3"},
+    {   src: "/fond/report/070624/large/4.jpg",
+        thumbnail: "/fond/report/070624/small/4.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 300,
+        caption: "Фото 4"}
+    ]
+
+export const reportImages030624 = [
+    {   src: "/fond/report/030624/large/1.jpg",
+        thumbnail: "/fond/report/030624/small/1.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 300,
+        caption: "Фото 1"},
+    {   src: "/fond/report/030624/large/2.jpg",
+        thumbnail: "/fond/report/030624/small/2.jpg",
+        thumbnailWidth: 300,
+        thumbnailHeight: 400,
+        caption: "Фото 2"}
+    ]

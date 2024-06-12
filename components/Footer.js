@@ -27,7 +27,7 @@ export default function Footer() {
                 <hr className="mt-4 mb-1" />
                 <Row className="text-center">
                     <i className="bi bi-c-circle mx-2 mb-2" style={{fontSize:"0.7rem"}}>
-                        <span style={{fontSize:"0.7rem",padding:"10px"}}>всі права захищені | розроблено UniqueStudio</span>
+                        <span style={{fontSize:"0.7rem",padding:"10px"}}>всі права захищені | розроблено DevIz</span>
                     </i>
                 </Row>
 
